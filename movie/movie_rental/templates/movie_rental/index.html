@@ -1,0 +1,13 @@
+<html>
+<head> </head>
+<body> 
+    <h1> Customer's Name </h1>
+    {% for i in name %}
+    <h3> <a href="{% url 'customer' %}">{{i}} </a> </h3>
+    {% endfor %}
+    <h1> Movie Name</h1>
+    {% for m in movies_name %}
+    <h3> <a href="{% url 'movie' m %}">{{m}}</a> </h3>
+    {% endfor %}
+</body>
+</html>
